@@ -738,7 +738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ball: {fileID: 1970191586310190642, guid: c75555b91c6420f4494acdc5af8d0c9a, type: 3}
   spawnValues: {x: 4.5, y: 19, z: 4.5}
-  ballCount: 30
+  ballCount: 5
   startWait: 3
   spawnWait: 2
   scoreText: {fileID: 1091655036}

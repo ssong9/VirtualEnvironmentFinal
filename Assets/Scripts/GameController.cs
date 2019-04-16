@@ -47,17 +47,18 @@ public class GameController : MonoBehaviour
 			for (int i = 0; i < ballCount; i++)
 			{
 				Vector3 spawnPosition = new Vector3 (Random.Range (-spawnValues.x, spawnValues.x), spawnValues.y, Random.Range(-spawnValues.z, spawnValues.z));
-				Quaternion spawnRotation = //Quaternion.identity;
-				Instantiate (ball, spawnPosition, spawnRotation);
+				Quaternion spawnRotation = Quaternion.identity;
+				Instantiate(ball, spawnPosition, spawnRotation);
 				yield return new WaitForSeconds(spawnWait);
 			}
-		GameOver();
+			GameOver();
 
-			if (gameOver)
-			{
-				restartText.text = "Press 'R' for Restart";
-				restart = true;
-			}
+
+		if (gameOver)
+		{
+			restartText.text = "Press 'R' for Restart";
+			restart = true;
+		}
 	
 	}
 
